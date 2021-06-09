@@ -13,12 +13,17 @@ Uyulanan formul en basit haliyle buydu. Buradaki 0lar koddaki xi ve yi'ye denk g
 BicubicInterpolation.m;
 
 Bicubic fonksiyonunda kullanilan algoritma;
+
 ![image](https://user-images.githubusercontent.com/78234356/121353140-33d5d200-c936-11eb-8421-8b1adee63a8d.png)
+
 Ana fonksiyonda uygulanan algoritma;
+
 ![image](https://user-images.githubusercontent.com/78234356/121353180-3d5f3a00-c936-11eb-9871-38a9b030bd02.png)
+
 En basta asil resmin ilk 2 satir ve sutunu sonuc resmine eklendi.
 
 RGB formatlarinda sadece bir for dongusu daha eklenerek 3 boyutlu array uzerinde ayni algoritma calistiriliyor.
 
 Distance Transform.m;
+
 Tum resim 9 parcaya bolunerek taraniyor. Bu parcalar kose noktalar(4), resmin kenarlari-koseleri(4), resmin ortasi. Daha sonra degeri 8 komsusundan en az biri 255 olan pixellere 1 degeri veriliyor. 8 komsusundan en az biri 1 olanlara 2 degeri veriliyor ve for dongusuyle bunun resim bitene kadar yapilmasi amaclaniyor. En son normalizasyon adiminda  resmin min degeri belirleniyor ve tum pixeller bu degere gore asagi cekiliyor. Sonrasindaki max degeri belirlenerek her pixel 255 ile carpilip max a bolununce normalizasyon tamamlanmis oluyor.
